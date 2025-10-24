@@ -13,10 +13,7 @@ namespace inheritancePr
         {
             public decimal salary { get; set; }
 
-            public virtual decimal CalculateBonus()
-            {
-                return salary * 0;
-            }
+            public virtual decimal CalculateBonus() => salary * 0;
         }
 
         public class Manager : Employee, IReportable
